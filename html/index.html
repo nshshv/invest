@@ -23,12 +23,75 @@
     </div>
     <div id="happyimgs">
         <h2 class="exelent">Весёлые картинки</h2>
+        <img src="img/shrek.jpg" alt="mem1">
+        <img src="img/cats.png" alt="mem2">
     </div>
     <div id="timetable">
         <h2 class="exelent">Расписание звонков</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Номер пары</td>
+                    <td>Название предмета</td>
+                    <td>Аудитория</td>
+                    <td>Преподаватель</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>3</td>
+                    <td>Проектирование и автоматизация 
+                        бизнесс процессов</td>
+                    <td>219/4к</td>
+                    <td>Деев О.А.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Проектирование и автоматизация 
+                        бизнесс процессов</td>
+                    <td>215/4к</td>
+                    <td>Деев О.А.</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     <div id="diary">
         <h2 class="exelent">Дневник</h2>
+        <from action="">
+            <div>
+                <lable for="fio">ФИО</lable> 
+                <input type="text" id="fio" name="fio" value="Шишова Наталья Сергеевна">
+            </div>
+            <div>
+                <lable for="fio">Пол</lable> 
+                <input type="radio" id="gender" value="male">Мужской
+                <input type="radio" id="gender" value="famale" checked>Женский
+            </div>
+            <div>
+                <lable for="school">Школа</lable> 
+                <input type="text" id="school" name="school" value="Школы №9">
+            </div>
+            <div>
+                <lable for="class">Класс</lable> 
+                <input type="text" id="class" name="class" value="11A">
+            </div>
+            <div>
+                <lable for="locality">Населенный пункт</lable> 
+                <input type="text" id="locality" name="locality" value="города Можги">
+            </div>
+            <div>
+                <lable for="color">Цвет обложки</lable> 
+                <input type="color" id="color" name="color" value="#cac7e1">
+            </div>
+            <div>
+                <lable for="year">Год начала учебног года</lable> 
+                <input type="number" name="year" min="2010" max="2021" value="2010">
+            </div>
+            <div>
+                <lable for="email">Email</lable> 
+                <input type="email" id="email" name="email" value="n.5hishova@yandex.ru">
+            </div>
+        </from>
     </div>
     <div id="accounting">
         <h2 class="exelent">Бухгалтерия</h2>
