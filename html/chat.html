@@ -66,7 +66,7 @@
         </div>
     </div>
     <script>
-        function newMassage(text){
+        function newMessage(text){
             let div = document.createElement('div');
             div.className = 'message';
             div.innerHTML = text;
@@ -74,9 +74,29 @@
 
         }
 
-        for (let i = 0; i<25; i++){
-            newMassage('text'+i)
+        function sendMessage(){
+            let message = document.querySelector('#message');
+            let text = message.value;
+            if(text.trim().length >0){
+                newMessage(text);
+                message.value = '';
+            }
         }
+
+        function sendMessageKeyUp(e){
+            if (e.code == 'Enter'){
+                sendMessage();
+            }
+        }
+
+        window.onload = () => {
+            document.querySelector('#send_message').onclick = sendMessage;
+            document.querySelector('#message').onkeyup = sendMessageKeyUp;
+        }
+
+        //for (let i = 0; i<25; i++){
+        //    newMassage('text'+i)
+        //}
     </script>
 
 </body>
